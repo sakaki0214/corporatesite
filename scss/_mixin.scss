@@ -1,0 +1,18 @@
+//h3（左側が太いborder、下が細いborder）
+//例）
+//.pageTitleH3 {
+//	@include pageTitleH3(#22ab39);
+//}
+
+@mixin pageTitleH3($color) {
+  border-top:2px solid #{$color};
+  border-bottom:4px solid #{$color};
+  margin:0 0 15px;
+  padding:10px 0;
+}
+
+@mixin tabContentsBorder($color) {
+  border:2px solid #{$color};
+  margin:0 0 15px;
+  padding:10px 0;
+}

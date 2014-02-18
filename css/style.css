@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+}
+
+* {
+  word-wrap: break-word;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+}
+
+p, li, dt, dd {
+  line-height: 1.5;
+}
+
+input,
+textarea {
+  font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+
+* html input,
+* html textarea {
+  font-family: "ＭＳ Ｐゴシック", "MS PGothic", Osaka;
+}
+
+#mod_pageHeader {
+  background: #ccc;
+  padding: 1px 15px;
+}
+#mod_pageHeader h1 {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  #mod_pageHeader h1 {
+    font-size: 18px;
+  }
+}
+#mod_pageHeaderInner {
+  width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #mod_pageHeaderInner {
+    text-align: center;
+    width: auto;
+  }
+}
+#mod_pageContents {
+  background: #ddd;
+  width: 860px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+@media (max-width: 768px) {
+  #mod_pageContents {
+    width: auto;
+    padding: 1px 15px;
+  }
+}
+#mod_pageMain {
+  background: #ccc;
+  float: left;
+  width: 645px;
+}
+
+@media (max-width: 768px) {
+  #mod_pageMain {
+    float: none;
+    width: 100%;
+    margin: 0 0 25px;
+  }
+}
+#mod_pageSide {
+  background: #ccc;
+  float: right;
+  width: 200px;
+}
+#mod_pageSide ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+@media (max-width: 768px) {
+  #mod_pageSide {
+    float: none;
+    width: 100%;
+  }
+}
+#mod_pageFooter {
+  padding: 1px 15px;
+  background: #eee;
+  color: #000;
+}
+#mod_pageFooter small {
+  font-size: 80%;
+  color: #999;
+}
+
+#mod_pageFooterInner {
+  width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #mod_pageFooterInner {
+    width: auto;
+    text-align: center;
+  }
+}
+/* TOP
+------------------------------------------*/
+.pageTitleH3 {
+  border-top: 2px solid #22ab39;
+  border-bottom: 4px solid #22ab39;
+  margin: 0 0 15px;
+  padding: 10px 0;
+}
