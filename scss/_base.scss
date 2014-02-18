@@ -1,3 +1,4 @@
+
 /* 
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -7,103 +8,104 @@ Twitter: @rich_clark
 */
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
-	margin:0;
-	padding:0;
-	border:0;
-	outline:0;
-	font-size:100%;
-	vertical-align:baseline;
-	background:transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 body {
-	line-height:1;
+  line-height: 1;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display:block;
+  display: block;
 }
 nav ul {
-	list-style:none;
+  list-style: none;
 }
 blockquote, q {
-	quotes:none;
+  quotes: none;
 }
 blockquote:before, blockquote:after, q:before, q:after {
-	content:'';
-	content:none;
+  content: '';
+  content: none;
 }
 a {
-	margin:0;
-	padding:0;
-	font-size:100%;
-	vertical-align:baseline;
-	background:transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 /* change colours to suit your needs */
 ins {
-	background-color:#ff9;
-	color:#000;
-	text-decoration:none;
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
 }
 /* change colours to suit your needs */
 mark {
-	background-color:#ff9;
-	color:#000;
-	font-style:italic;
-	font-weight:bold;
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
 }
 del {
-	text-decoration: line-through;
+  text-decoration: line-through;
 }
 abbr[title], dfn[title] {
-	border-bottom:1px dotted;
-	cursor:help;
+  border-bottom: 1px dotted;
+  cursor: help;
 }
 table {
-	border-collapse:collapse;
-	border-spacing:0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /* change border colour to suit your needs */
 hr {
-	display:block;
-	height:1px;
-	border:0;
-	border-top:1px solid #cccccc;
-	margin:1em 0;
-	padding:0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
 }
 input, select {
-	vertical-align:middle;
+  vertical-align: middle;
 }
 li {
-	list-style-type:none;
+  list-style-type: none;
 }
 html {
-	overflow-y: scroll;
+  overflow-y: scroll;
 }
 address, caption, cite, code, dfn, em, strong, th, var {
-	font-style: normal;
+  font-style: normal;
 }
 * {
-	word-wrap: break-word;
+  word-wrap: break-word;
 }
 body {
-	background: #fff;
-	color: #333;
-	font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
-	font-size:14px;
-	line-height: 1.5;
+  background: #fff;
+  color: #333;
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
 }
 h1, h2, h3, h4, h5, h6 {
-	line-height:1.5;
+  line-height: 1.5;
 }
 p, li, dt, dd {
-	line-height:1.5;
+  line-height: 1.5;
 }
-input,
-textarea {
-	font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+input, textarea {
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
 }
-* html input,
-* html textarea {
-	font-family:"ＭＳ Ｐゴシック", "MS PGothic", Osaka;
+* html input, * html textarea {
+  font-family: "ＭＳ Ｐゴシック", "MS PGothic", Osaka;
+}
+a {
+  color:#0093FF;
 }

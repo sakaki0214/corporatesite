@@ -107,7 +107,7 @@ address, caption, cite, code, dfn, em, strong, th, var {
 body {
   background: #fff;
   color: #333;
-  font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -120,110 +120,180 @@ p, li, dt, dd {
   line-height: 1.5;
 }
 
-input,
-textarea {
-  font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+input, textarea {
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
 }
 
-* html input,
-* html textarea {
+* html input, * html textarea {
   font-family: "ＭＳ Ｐゴシック", "MS PGothic", Osaka;
 }
 
-#mod_pageHeader {
-  background: #ccc;
-  padding: 1px 15px;
-}
-#mod_pageHeader h1 {
-  font-size: 20px;
+a {
+  color: #0093FF;
 }
 
-@media (max-width: 768px) {
-  #mod_pageHeader h1 {
-    font-size: 18px;
-  }
+/* header
+-------------------------------*/
+.l-header {
+  border-top: 5px solid #FF8600;
 }
-#mod_pageHeaderInner {
-  width: 900px;
+.l-header h1 {
+  float: left;
+  width: 287px;
+  margin: 0 33px 0 0;
+}
+.l-header h1 a {
+  text-decoration: none;
+}
+
+.l-headerInner {
+  width: 980px;
   margin: 0 auto;
+  padding: 30px 0;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
-  #mod_pageHeaderInner {
+  .l-headerInner {
     text-align: center;
     width: auto;
   }
 }
-#mod_pageContents {
-  background: #ddd;
-  width: 860px;
-  margin: 0 auto;
-  padding: 20px;
+.l-gNav {
+  float: left;
+}
+.l-gNav li {
+  float: left;
+  width: 127px;
+  margin: 0 0 0 5px;
+}
+.l-gNav li a {
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  color: #333;
+  background: #eee;
+  text-decoration: none;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.l-gNav li a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+}
+
+/* contents
+-------------------------------*/
+.l-contents {
+  width: 980px;
+  margin: 0 auto 30px;
   overflow: hidden;
   *zoom: 1;
 }
 
 @media (max-width: 768px) {
-  #mod_pageContents {
+  .l-contents {
     width: auto;
     padding: 1px 15px;
   }
 }
-#mod_pageMain {
-  background: #ccc;
-  float: left;
-  width: 645px;
+.l-main {
+  float: right;
+  width: 710px;
 }
 
 @media (max-width: 768px) {
-  #mod_pageMain {
+  .l-main {
     float: none;
     width: 100%;
     margin: 0 0 25px;
   }
 }
-#mod_pageSide {
-  background: #ccc;
-  float: right;
-  width: 200px;
+.l-sub {
+  float: left;
+  width: 250px;
 }
-#mod_pageSide ul {
+.l-sub ul {
   list-style-type: none;
   padding-left: 0;
 }
 
 @media (max-width: 768px) {
-  #mod_pageSide {
+  .l-sub {
     float: none;
     width: 100%;
   }
 }
-#mod_pageFooter {
-  padding: 1px 15px;
+.l-bnr li {
+  maRgin: 0 0 5px;
+}
+
+/* footer
+-------------------------------*/
+.l-footer {
+  padding: 30px 0;
   background: #eee;
   color: #000;
 }
-#mod_pageFooter small {
-  font-size: 80%;
-  color: #999;
+.l-footer .cr {
+  font-size: 12px;
+  color: #333;
 }
 
-#mod_pageFooterInner {
-  width: 900px;
+.l-footerInner {
+  width: 980px;
   margin: 0 auto;
+}
+.l-footerInner .cr {
+  text-align: right;
 }
 
 @media (max-width: 768px) {
-  #mod_pageFooterInner {
+  .l-footerInner {
     width: auto;
-    text-align: center;
+    text-align: right;
   }
 }
 /* TOP
 ------------------------------------------*/
-.pageTitleH3 {
-  border-top: 2px solid #22ab39;
-  border-bottom: 4px solid #22ab39;
-  margin: 0 0 15px;
-  padding: 10px 0;
+.mainVisual {
+  width: 980px;
+  height: 300px;
+  margin: 0 auto 30px;
+  background: #eee;
+}
+
+.newslist {
+  margin: 0 0 20px;
+}
+.newslist .newslist-title {
+  margin: 0 0 5px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.newslist .newslist-text li {
+  overflow: hidden;
+  padding: 0 0 10px;
+}
+.newslist .newslist-text a {
+  text-decoration: none;
+  color: #333;
+}
+.newslist .newslist-text .date {
+  display: block;
+  float: left;
+  padding: 0 10px 0 0;
+}
+.newslist .newslist-text .text {
+  display: block;
+  padding: 0 0 0 7em;
+}
+.newslist .newslist-more {
+  text-align: right;
 }
