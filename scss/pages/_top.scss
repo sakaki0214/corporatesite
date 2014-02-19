@@ -7,9 +7,15 @@
 
 .mainVisual {
   width:980px;
-  height:300px;
   margin:0 auto 30px;
-  background:#eee;
+  @media(max-width:$break-small) {
+    width:100%;
+    margin:0 auto 15px;
+    img {
+      width:100%;
+      vertical-align:bottom;
+    }
+  }
 }
 .newslist {
   margin:0 0 20px;
@@ -20,12 +26,14 @@
   }
 }
 .newslist-text {
+  margin:0 0 10px;
   li {
     overflow:hidden;
-    padding:0 0 10px;
   }
   a {
     display:block;
+    padding:10px 0 5px;
+    border-bottom:1px dotted #ccc;
     text-decoration:none;
     color:#333;
   }
@@ -36,9 +44,35 @@
   }
   .text {
     display:block;
-    padding:0 0 0 7em;
+    padding:0 0 5px 7em;
+  }
+  @media(max-width:$break-small) {
+    .date {
+      
+    }
+    .text {
+      clear:both;
+      padding:0 0 5px;
+    }
   }
 }
 .newslist-more {
   text-align:right;
+  a {
+    position:relative;
+    padding:0 15px 0 0;
+    text-decoration:none;
+    font-size:12px;
+    &:before {
+      content:"";
+      position:absolute;
+      top:35%;
+      right:0;
+      border-top:2px solid #333;
+      border-right:2px solid #333;
+      width:5px;
+      height:5px;
+      @include rotate(45deg);
+    }
+  }
 }
