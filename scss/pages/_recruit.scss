@@ -7,6 +7,9 @@
 
 .recruit {
   margin:0 0 40px;
+  .pageTitle {
+    padding-left:10px;
+  }
   dl {
     margin-top:-10px;
     border-top:1px dotted #666;
@@ -19,9 +22,22 @@
     text-align:right;
     background:#eee;
     font-weight:bold;
+    border-bottom:1px dotted #666;
   }
   dd {
     padding:15px 0 15px 12em;
     border-bottom:1px dotted #666;
+  }
+  @media(max-width:$break-medium) {
+    margin:0 0 10px;
+    dt {
+      float:none;
+      width:auto;
+      padding:10px;
+      text-align:left;
+    }
+    dd {
+      padding:10px;
+    }
   }
 }
