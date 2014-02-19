@@ -50,6 +50,9 @@ $break-medium:900px;
       &:hover {
         @include opacity(.6);
       }
+      &.cu {
+        background:#ccc;
+      }
     }
   }
 }
@@ -69,8 +72,8 @@ $break-medium:900px;
   }
 }
 .l-main {
-  float:right;
-  width:710px;
+  float:left;
+  width:700px;
 }
 @media(max-width:$break-small) {
   .l-main {
@@ -80,7 +83,7 @@ $break-medium:900px;
   }
 }
 .l-sub {
-  float:left;
+  float:right;
   width:250px;
   ul {
     list-style-type:none;
@@ -96,6 +99,77 @@ $break-medium:900px;
 .l-bnr {
   li {
     maRgin:0 0 5px;
+  }
+}
+.pageTitle {
+  padding:30px 0;
+  font-size:24px;
+  font-weight:normal;
+}
+.l-sub-directory {
+  margin:86px 0 30px;
+  a {
+    position:relative;
+    display:block;
+    margin:0 0 2px;
+    padding:10px;
+    text-decoration:none;
+    color:#333;
+    background:#eee;
+    &:before {
+      content:"";
+      position:absolute;
+      top:40%;
+      right:15px;
+      border-top:2px solid #333;
+      border-right:2px solid #333;
+      width:5px;
+      height:5px;
+      @include rotate(45deg);
+    }
+  }
+}
+.bread {
+  overflow:hidden;
+  padding:5px 0;
+  border-top:1px dotted #ccc;
+  border-bottom:1px dotted #ccc;
+  li {
+    position:relative;
+    display:inline;
+    padding:0 20px 0 0;
+    font-size:12px;
+    line-height:1;
+    a:after {
+      content:">";
+      position:absolute;
+      top:.2em;
+      right:0;
+    }
+  }
+  a {
+    text-decoration:none;
+    color:#666;
+  }
+}
+.pagetop {
+  text-align:right;
+  a {
+    position:relative;
+    padding:0 0 0 20px;
+    text-decoration:none;
+    font-size:12px;
+    &:before {
+      content:"";
+      position:absolute;
+      top:40%;
+      left:0;
+      border-top:2px solid #333;
+      border-right:2px solid #333;
+      width:5px;
+      height:5px;
+      @include rotate(-45deg);
+    }
   }
 }
 
@@ -114,6 +188,7 @@ $break-medium:900px;
   width:980px;
   margin:0 auto;
   .cr {
+    clear:both;
     text-align:right;
   }
 }
@@ -123,3 +198,18 @@ $break-medium:900px;
     text-align:right;
   }
 }
+.footerNav {
+  a {
+    text-decoration:none;
+    color:#333;
+  }
+  ul {
+    margin:0 0 15px;
+  }
+  li {
+    display:inline;
+    padding:0 15px 0 0;
+    font-size:12px;
+  }
+}
+

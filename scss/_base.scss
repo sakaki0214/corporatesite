@@ -107,5 +107,10 @@ input, textarea {
   font-family: "ＭＳ Ｐゴシック", "MS PGothic", Osaka;
 }
 a {
-  color:#0093FF;
+  color:#333;
+  @include transition-property(opacity);
+  @include transition-duration(.5s);
+  &:hover {
+    @include opacity(.6);
+  }
 }
