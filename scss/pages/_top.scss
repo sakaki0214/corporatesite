@@ -6,6 +6,7 @@
 //}
 
 .mainVisual {
+  position:relative;
   width:980px;
   margin:0 auto 30px;
   @media(max-width:$break-small) {
@@ -14,6 +15,49 @@
     img {
       width:100%;
       vertical-align:bottom;
+    }
+  }
+}
+#banner {
+  margin:0 0 15px;
+  ul {
+    position:relative;
+    overflow:hidden;
+    width:980px;
+    height:300px;
+    li {
+      float:left;
+      width:980px;
+      position:absolute;
+      a:hover {
+        @include opacity(1);
+      }
+    }
+  }
+}
+#btn-prev {
+  position:absolute;
+  top:50%;
+  left:0;
+  margin-top:-10px;
+}
+#btn-next {
+  position:absolute;
+  top:50%;
+  right:0;
+  margin-top:-10px;
+}
+#pagenation {
+  text-align:center;
+  li {
+    display:inline;
+    background:url(../img/top/icon-pager.png) no-repeat left top;
+    padding:0 10px 0 0;
+    &.active {
+      background:url(../img/top/icon-pager-cu.png) no-repeat left top;
+    }
+    &:last-of-type {
+      padding:0;
     }
   }
 }
