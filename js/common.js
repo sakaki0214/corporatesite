@@ -90,3 +90,15 @@ $(function(){
   }
 });
 })(jQuery);
+
+//レスポンシブ対応
+$(window).on("load resize",function(){
+  //スライド画像のheightを取得
+  var imgHeight = $('#banner li img').height();
+  $('#banner ul').css('height',imgHeight);
+  
+  //左右矢印の位置調整
+  var arrowPositionY = imgHeight / 2;
+  $('#btn-prev').css('top',arrowPositionY);
+  $('#btn-next').css('top',arrowPositionY);
+});
