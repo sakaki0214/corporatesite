@@ -6,8 +6,9 @@ $break-small:480px;
 @import "compass";
 @import "base";
 
-@import "module";
 @import "mixin";
+@import "module";
 
 @import "pages/top";
 @import "pages/recruit";
+@import "pages/works";

@@ -1,0 +1,122 @@
+/* WORKS
+------------------------------------------*/
+
+//.pageTitleH3 {
+//  @include pageTitleH3(#22ab39);
+//}
+
+.works {
+  overflow:hidden;
+  .works-title {
+    float:left;
+    width:220px;
+    margin:0 20px 20px 0;
+    &:nth-of-type(3n) {
+      margin:0 0 20px;
+    }
+  }
+  h4 {
+    padding:0 0 5px;
+  }
+  .works-thumb {
+    
+  }
+  .works-tx {
+    padding:0 0 5px;
+  }
+  .works-link {
+    a {
+      display:block;
+      position:relative;
+      padding:10px;
+      background:#eee;
+      font-size:12px;
+      text-decoration:none;
+      &:before {
+        @include linkArrowR(45);
+      }
+    }
+  }
+  @media(max-width:$break-medium) {
+      padding:0 10px;
+  }
+  @media(max-width:734px) {
+    .works-title {
+      clear:both;
+      float:none;
+      overflow:hidden;
+      width:100%;
+    }
+    .works-thumb {
+      float:left;
+    }
+    h4 {
+      padding:0 0 5px 235px;
+    }
+    .works-tx {
+      padding:0 0 10px 235px;
+    }
+    .works-link {
+      padding:0 0 0 235px;
+    }
+  }
+  @media(max-width:550px) {
+    .works-thumb {
+      width:30%;
+      img {
+        max-width:100%;
+      }
+    }
+    h4 {
+      padding:0 0 5px 33%;
+    }
+    .works-tx {
+      padding:0 0 10px 33%;
+    }
+    .works-link {
+      padding:0 0 0 33%;
+    }
+  }
+  @media(max-width:$break-small) {
+    .works-thumb {
+      float:none;
+      width:100%;
+      text-align:center;
+    }
+    h4 {
+      padding:0 0 5px 0;
+    }
+    .works-tx {
+      padding:0 0 10px 0;
+    }
+    .works-link {
+      padding:0 0 0 0;
+    }
+  }
+}
+.worksDetail {
+  .worksDetail-thumb {
+    float:left;
+  }
+  .worksDetail-date {
+    padding:0 0 20px 235px;
+    dt {
+      float:left;
+      width:120px;
+      padding:5px 0;
+    }
+    dd {
+      padding:5px 0 5px 130px;
+      border-bottom:1px dotted #ccc;
+      &:nth-of-type(1) {
+        border-top:1px dotted #ccc;
+      }
+    }
+  }
+  .worksDetail-tx {
+    padding:0 0 10px 235px;
+    p {
+      padding:0 0 10px;
+    }
+  }
+}

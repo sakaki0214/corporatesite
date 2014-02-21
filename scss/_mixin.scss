@@ -16,3 +16,26 @@
   margin:0 0 15px;
   padding:10px 0;
 }
+
+@mixin linkArrowR($rotateNum) {
+  content:"";
+  position:absolute;
+  top:40%;
+  right:10px;
+  border-top:2px solid #333;
+  border-right:2px solid #333;
+  width:5px;
+  height:5px;
+  @include rotate(#{$rotateNum}deg);
+}
+@mixin linkArrowL($rotateNum) {
+  content:"";
+  position:absolute;
+  top:40%;
+  left:0;
+  border-top:2px solid #333;
+  border-right:2px solid #333;
+  width:5px;
+  height:5px;
+  @include rotate(#{$rotateNum}deg);
+}
