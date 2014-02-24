@@ -119,4 +119,39 @@
       padding:0 0 10px;
     }
   }
+  @media(max-width:$break-medium) {
+    .worksDetail-thumb {
+      float:none;
+      text-align:center;
+      padding:0 0 5px;
+    }
+    .worksDetail-date {
+      padding:0 0 20px;
+    }
+    .worksDetail-tx {
+      padding:0 0 10px;
+    }
+  }
+}
+.pageback {
+  display:none;
+  @media(max-width:$break-medium) {
+
+    display:block;
+    padding:0 10px 20px 10px;
+    text-align:right;
+    a {
+      display:block;
+      position:relative;
+      padding:10px 10px 10px 15px;
+      background:#eee;
+      font-size:12px;
+      text-decoration:none;
+      &:before {
+        @include linkArrowL(-135);
+        top:38%;
+        left:10px;
+      }
+    }
+  }
 }

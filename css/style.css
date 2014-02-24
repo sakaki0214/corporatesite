@@ -386,7 +386,7 @@ a:hover {
 }
 .pagetop a {
   position: relative;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 15px;
   text-decoration: none;
   font-size: 12px;
 }
@@ -404,6 +404,11 @@ a:hover {
   -o-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+@media (max-width: 767px) {
+  .pagetop {
+    padding: 0 10px 0 0;
+  }
 }
 
 /* footer
@@ -768,4 +773,67 @@ a:hover {
 }
 .worksDetail .worksDetail-tx p {
   padding: 0 0 10px;
+}
+@media (max-width: 767px) {
+  .worksDetail .worksDetail-thumb {
+    float: none;
+    text-align: center;
+    padding: 0 0 5px;
+  }
+  .worksDetail .worksDetail-date {
+    padding: 0 0 20px;
+  }
+  .worksDetail .worksDetail-tx {
+    padding: 0 0 10px;
+  }
+}
+
+.pageback {
+  display: none;
+}
+@media (max-width: 767px) {
+  .pageback {
+    display: block;
+    padding: 0 10px 20px 10px;
+    text-align: right;
+  }
+  .pageback a {
+    display: block;
+    position: relative;
+    padding: 10px 10px 10px 15px;
+    background: #eee;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  .pageback a:before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 0;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    width: 5px;
+    height: 5px;
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    top: 38%;
+    left: 10px;
+  }
+}
+
+/* SERVICE
+------------------------------------------*/
+.service {
+  padding: 0 10px;
+}
+
+.software li {
+  padding: 0 0 20px;
+  font-size: 16px;
+}
+.software span {
+  font-size: 12px;
 }
