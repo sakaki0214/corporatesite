@@ -830,6 +830,10 @@ a:hover {
   padding: 0 10px;
 }
 
+.service-index p {
+  padding: 0 0 15px;
+}
+
 .software li {
   padding: 0 0 20px;
   font-size: 16px;
