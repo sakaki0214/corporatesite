@@ -1,3 +1,10 @@
 /* RECRUIT
 ------------------------------------------*/
 
+.recruit {
+  @media(max-width:$break-medium) {
+    .pageTitle {
+      padding-left:10px;
+    }
+  }
+}

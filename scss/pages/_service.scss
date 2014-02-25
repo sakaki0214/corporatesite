@@ -1,10 +1,11 @@
 /* SERVICE
 ------------------------------------------*/
 
-//.pageTitleH3 {
-//  @include pageTitleH3(#22ab39);
-//}
-
+.service {
+  @media(max-width:$break-medium) {
+      padding:0 10px;
+  }
+}
 .service-index {
   p {
     padding:0 0 15px;

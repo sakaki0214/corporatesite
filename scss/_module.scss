@@ -235,6 +235,9 @@
   }
   @media(max-width:$break-medium) {
     margin:0 0 10px;
+    dl {
+      background:none;
+    }
     dt {
       float:none;
       width:auto;

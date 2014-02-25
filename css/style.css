@@ -436,6 +436,9 @@ a:hover {
   .dlList {
     margin: 0 0 10px;
   }
+  .dlList dl {
+    background: none;
+  }
   .dlList dt {
     float: none;
     width: auto;
@@ -646,6 +649,12 @@ a:hover {
 
 /* RECRUIT
 ------------------------------------------*/
+@media (max-width: 767px) {
+  .recruit .pageTitle {
+    padding-left: 10px;
+  }
+}
+
 /* WORKS
 ------------------------------------------*/
 .works {
@@ -823,6 +832,12 @@ a:hover {
 
 /* SERVICE
 ------------------------------------------*/
+@media (max-width: 767px) {
+  .service {
+    padding: 0 10px;
+  }
+}
+
 .service-index p {
   padding: 0 0 15px;
 }
@@ -837,6 +852,12 @@ a:hover {
 
 /* COMPANY
 ------------------------------------------*/
+@media (max-width: 767px) {
+  .company {
+    padding: 0 10px;
+  }
+}
+
 .greeting p {
   margin: 0 0 15px;
 }
@@ -856,6 +877,92 @@ a:hover {
   font-weight: bold;
 }
 
-.about dl {
-  border-top: 1px dotted #666;
+/* SERVICE
+------------------------------------------*/
+.contact dl {
+  margin: 0 0 20px;
+}
+@media (max-width: 767px) {
+  .contact .pageTitle {
+    padding-left: 10px;
+  }
+}
+
+.contact-leadTx {
+  padding: 0 0 20px;
+}
+@media (max-width: 767px) {
+  .contact-leadTx {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.contact-tx {
+  width: 501px;
+  padding: 5px;
+  border: 2px solid #ccc;
+}
+@media (max-width: 767px) {
+  .contact-tx {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
+.contact-select {
+  padding: 5px;
+  border: 2px solid #ccc;
+}
+
+.contact-textarea {
+  width: 501px;
+  height: 150px;
+  padding: 5px;
+  border: 2px solid #ccc;
+}
+@media (max-width: 767px) {
+  .contact-textarea {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
+.is-contactError {
+  background: #FFDCDD;
+  border: 2px solid #FFC3C4;
+}
+
+.contact-submit {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+.contact-submit:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+@media (max-width: 767px) {
+  .contact-submit {
+    margin: 0 auto 50px;
+  }
+}
+
+.contactFinish {
+  padding: 0 0 50px;
+}
+.contactFinish p {
+  padding: 0 0 15px;
+}
+@media (max-width: 767px) {
+  .contactFinish {
+    padding: 0 10px;
+  }
 }

@@ -1,6 +1,11 @@
 /* COMPANY
 ------------------------------------------*/
 
+.company {
+  @media(max-width:$break-medium) {
+    padding:0 10px;
+  }
+}
 .greeting {
   p {
     margin:0 0 15px;
@@ -19,24 +24,4 @@
 }
 .presidentName {
   font-weight:bold;
-}
-.about {
-  dl {
-    border-top:1px dotted #666;
-  }
-  dt {
-    
-  }
-  dd {
-    
-  }
-  ul {
-    
-  }
-  li {
-    
-    p {
-      
-    }
-  }
 }
