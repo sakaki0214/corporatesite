@@ -1,13 +1,6 @@
 /* COMPANY
 ------------------------------------------*/
 
-//.pageTitleH3 {
-//  @include pageTitleH3(#22ab39);
-//}
-
-.company {
-  padding:0 10px;
-}
 .greeting {
   p {
     margin:0 0 15px;
@@ -26,4 +19,24 @@
 }
 .presidentName {
   font-weight:bold;
+}
+.about {
+  dl {
+    border-top:1px dotted #666;
+  }
+  dt {
+    
+  }
+  dd {
+    
+  }
+  ul {
+    
+  }
+  li {
+    
+    p {
+      
+    }
+  }
 }

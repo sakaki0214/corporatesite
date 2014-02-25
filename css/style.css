@@ -349,7 +349,7 @@ a:hover {
 
 .bread {
   overflow: hidden;
-  width: 980px;
+  width: 970px;
   margin: 0 auto;
   padding: 5px;
   border-top: 1px dotted #ccc;
@@ -408,6 +408,42 @@ a:hover {
 @media (max-width: 767px) {
   .pagetop {
     padding: 0 10px 0 0;
+  }
+}
+
+.dlList {
+  margin: 0 0 40px;
+}
+.dlList dl {
+  margin-top: -10px;
+  border-top: 1px dotted #666;
+  background: url(../img/common/bg-dt.png) repeat-y left top;
+}
+.dlList dt {
+  clear: both;
+  float: left;
+  width: 155px;
+  padding: 15px 15px 15px 0;
+  text-align: right;
+  background: #eee;
+  font-weight: bold;
+}
+.dlList dd {
+  padding: 15px 0 15px 185px;
+  border-bottom: 1px dotted #666;
+}
+@media (max-width: 767px) {
+  .dlList {
+    margin: 0 0 10px;
+  }
+  .dlList dt {
+    float: none;
+    width: auto;
+    padding: 10px;
+    text-align: left;
+  }
+  .dlList dd {
+    padding: 10px;
   }
 }
 
@@ -610,45 +646,6 @@ a:hover {
 
 /* RECRUIT
 ------------------------------------------*/
-.recruit {
-  margin: 0 0 40px;
-}
-.recruit .pageTitle {
-  padding-left: 10px;
-}
-.recruit dl {
-  margin-top: -10px;
-  border-top: 1px dotted #666;
-}
-.recruit dt {
-  clear: both;
-  float: left;
-  width: 10em;
-  padding: 15px 1em 15px 0;
-  text-align: right;
-  background: #eee;
-  font-weight: bold;
-  border-bottom: 1px dotted #666;
-}
-.recruit dd {
-  padding: 15px 0 15px 12em;
-  border-bottom: 1px dotted #666;
-}
-@media (max-width: 767px) {
-  .recruit {
-    margin: 0 0 10px;
-  }
-  .recruit dt {
-    float: none;
-    width: auto;
-    padding: 10px;
-    text-align: left;
-  }
-  .recruit dd {
-    padding: 10px;
-  }
-}
-
 /* WORKS
 ------------------------------------------*/
 .works {
@@ -826,10 +823,6 @@ a:hover {
 
 /* SERVICE
 ------------------------------------------*/
-.service {
-  padding: 0 10px;
-}
-
 .service-index p {
   padding: 0 0 15px;
 }
@@ -844,10 +837,6 @@ a:hover {
 
 /* COMPANY
 ------------------------------------------*/
-.company {
-  padding: 0 10px;
-}
-
 .greeting p {
   margin: 0 0 15px;
 }
@@ -865,4 +854,8 @@ a:hover {
 
 .presidentName {
   font-weight: bold;
+}
+
+.about dl {
+  border-top: 1px dotted #666;
 }

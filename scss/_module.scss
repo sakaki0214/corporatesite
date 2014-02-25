@@ -167,7 +167,7 @@
 }
 .bread {
   overflow:hidden;
-  width:980px;
+  width:970px;
   margin:0 auto;
   padding:5px ;
   border-top:1px dotted #ccc;
@@ -211,6 +211,39 @@
   }
   @media(max-width:$break-medium) {
     padding:0 10px 0 0;
+  }
+}
+.dlList {
+  margin:0 0 40px;
+  dl {
+    margin-top:-10px;
+    border-top:1px dotted #666;
+    background:url(../img/common/bg-dt.png) repeat-y left top;
+  }
+  dt {
+    clear:both;
+    float:left;
+    width:155px;
+    padding:15px 15px 15px 0;
+    text-align:right;
+    background:#eee;
+    font-weight:bold;
+  }
+  dd {
+    padding:15px 0 15px 185px;
+    border-bottom:1px dotted #666;
+  }
+  @media(max-width:$break-medium) {
+    margin:0 0 10px;
+    dt {
+      float:none;
+      width:auto;
+      padding:10px;
+      text-align:left;
+    }
+    dd {
+      padding:10px;
+    }
   }
 }
 
