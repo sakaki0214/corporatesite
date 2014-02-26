@@ -212,7 +212,7 @@ a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-.l-gNav li a.cu {
+.l-gNav li.cu a {
   background: #ccc;
 }
 @media (max-width: 767px) {

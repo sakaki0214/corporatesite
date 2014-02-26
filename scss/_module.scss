@@ -55,9 +55,9 @@
       &:hover {
         @include opacity(.6);
       }
-      &.cu {
-        background:#ccc;
-      }
+    }
+    &.cu a {
+      background:#ccc;
     }
   }
   @media(max-width:$break-medium) {
