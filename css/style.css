@@ -647,6 +647,18 @@ a:hover {
   transform: rotate(45deg);
 }
 
+/* NEWS
+------------------------------------------*/
+.newsDetail p {
+  padding: 0 0 15px;
+}
+
+.newsDetail-date {
+  display: block;
+  padding: 0 0 10px;
+  text-align: right;
+}
+
 /* RECRUIT
 ------------------------------------------*/
 @media (max-width: 767px) {
@@ -778,7 +790,7 @@ a:hover {
   padding: 0 0 10px 235px;
 }
 .worksDetail .worksDetail-tx p {
-  padding: 0 0 10px;
+  padding: 0 0 15px;
 }
 @media (max-width: 767px) {
   .worksDetail .worksDetail-thumb {
@@ -875,6 +887,47 @@ a:hover {
 
 .presidentName {
   font-weight: bold;
+}
+
+.privacy section {
+  margin: 0 0 20px;
+}
+.privacy section h4 {
+  margin: 0 0 5px;
+  padding: 0 0 5px;
+  font-size: 16px;
+  font-weight: normal;
+  border-bottom: 1px solid #FFB797;
+}
+.privacy section ol {
+  margin: 0 0 15px 2em;
+}
+.privacy section ol li {
+  padding: 0 0 5px 0;
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+.privacy section ul {
+  margin: 0 0 15px 2em;
+}
+.privacy section ul li {
+  padding: 0 0 5px 0;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+.privacy section p {
+  padding: 0 0 15px;
+}
+.privacy section address {
+  padding: 15px;
+  background: #eee;
+}
+.privacy .lead {
+  padding: 15px 15px 0;
+  border: 1px solid #FFB797;
+}
+.privacy .lead h4 {
+  border: none;
 }
 
 /* SERVICE
