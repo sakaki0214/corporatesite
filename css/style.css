@@ -1102,6 +1102,17 @@ a:hover {
 }
 @media (max-width: 767px) {
   .sitemap {
-    padding: 0 10px;
+    margin-right: 0;
+  }
+  .sitemap .pageTitle {
+    padding-left: 10px;
+  }
+  .sitemap section {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: none;
+    width: auto;
+    margin: 0 10px 10px;
   }
 }

@@ -29,6 +29,15 @@
     margin:0 20px 15px 0;
   }
   @media(max-width:$break-medium) {
-    padding:0 10px;
+    margin-right:0;
+    .pageTitle {
+      padding-left:10px;
+    }
+    section {
+      @include box-sizing(border-box);
+      float:none;
+      width:auto;
+      margin:0 10px 10px;
+    }
   }
 }
