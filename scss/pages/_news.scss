@@ -2,11 +2,16 @@
 ------------------------------------------*/
 
 .news {
-  
+  @media(max-width:$break-medium) {
+      padding:0 10px;
+  }
 }
 .newsDetail {
   p {
     padding:0 0 15px;
+  }
+  @media(max-width:$break-medium) {
+      padding:0 10px;
   }
 }
 .newsDetail-date {

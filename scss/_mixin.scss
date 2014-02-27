@@ -17,6 +17,10 @@
   padding:10px 0;
 }
 
+//例）
+//a:after {
+//	@include linkArrowR(45);
+//}
 @mixin linkArrowR($rotateNum) {
   content:"";
   position:absolute;

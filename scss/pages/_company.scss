@@ -76,4 +76,25 @@
   dl {
     margin:0 0 30px;
   }
+  @media(max-width:$break-medium) {
+    .pageTitle {
+      padding-left:10px;
+    }
+    .pageSubTitle {
+      padding-left:10px;
+    }
+    h4 {
+      padding-left:10px;
+    }
+  }
+}
+.companyAbout {
+  @media(max-width:$break-medium) {
+    .pageTitle {
+      padding-left:10px;
+    }
+    .pageSubTitle {
+      padding-left:10px;
+    }
+  }
 }

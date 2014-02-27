@@ -301,7 +301,7 @@ a:hover {
 }
 @media (max-width: 767px) {
   .pageTitle {
-    padding: 15px 0;
+    padding: 15px 0 10px;
   }
 }
 
@@ -649,8 +649,19 @@ a:hover {
 
 /* NEWS
 ------------------------------------------*/
+@media (max-width: 767px) {
+  .news {
+    padding: 0 10px;
+  }
+}
+
 .newsDetail p {
   padding: 0 0 15px;
+}
+@media (max-width: 767px) {
+  .newsDetail {
+    padding: 0 10px;
+  }
 }
 
 .newsDetail-date {
@@ -938,6 +949,26 @@ a:hover {
 .companyGroup dl {
   margin: 0 0 30px;
 }
+@media (max-width: 767px) {
+  .companyGroup .pageTitle {
+    padding-left: 10px;
+  }
+  .companyGroup .pageSubTitle {
+    padding-left: 10px;
+  }
+  .companyGroup h4 {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .companyAbout .pageTitle {
+    padding-left: 10px;
+  }
+  .companyAbout .pageSubTitle {
+    padding-left: 10px;
+  }
+}
 
 /* SERVICE
 ------------------------------------------*/
@@ -1025,6 +1056,52 @@ a:hover {
 }
 @media (max-width: 767px) {
   .contactFinish {
+    padding: 0 10px;
+  }
+}
+
+/* NEWS
+------------------------------------------*/
+.sitemap {
+  overflow: hidden;
+  zoom: 1;
+  margin-right: -20px;
+}
+.sitemap h3 a {
+  display: block;
+  position: relative;
+  margin: 0 0 10px;
+  padding: 10px;
+  border: 1px solid #FFB797;
+  text-decoration: none;
+}
+.sitemap h3 a:after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
+  width: 5px;
+  height: 5px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.sitemap li {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin: 0 0 0 2em;
+}
+.sitemap section {
+  float: left;
+  width: 340px;
+  margin: 0 20px 15px 0;
+}
+@media (max-width: 767px) {
+  .sitemap {
     padding: 0 10px;
   }
 }
